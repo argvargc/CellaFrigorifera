@@ -34,6 +34,7 @@ class Program
                     worksheet.Cell(i + 1, 4).Value = "Attenzione! Possibile avaria! ";
                     var noteRow = worksheet.Row(i + 1);
                     noteRow.Style.Fill.BackgroundColor = XLColor.Red;
+                    noteRow.Style.Font.Bold = true;
                 }
                 else if (nibbleInput <= 2)
                 {
